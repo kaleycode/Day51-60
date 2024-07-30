@@ -36,7 +36,6 @@ def viewItem():
       #print(f"{item} {inventory.count(item)}")
      #seen.append(item)
    
-
 def removeItem():
   time.sleep(1.5)
   os.system("clear")
