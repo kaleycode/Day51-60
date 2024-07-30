@@ -1,4 +1,3 @@
-
 pizza = {}
 def prettyPrint():
   print(f"\tName\tTopping\t\tSize(in)")
