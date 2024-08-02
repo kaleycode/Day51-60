@@ -63,3 +63,22 @@ else:
   time.sleep(0.6)
   print()
   print(f"🎉 Your next birthday is in {next.days} days! 🎉")
+
+
+# Now if we want to just do a basic event countdown from a user's input:
+
+time.sleep(2)
+os.system("clear")
+print("Enter a date for an event to countdown to! ")
+print()
+eventYear = int(input("Year: "))
+eventMonth = int(input("Month: "))
+eventDay = int(input("Day: "))
+event = datetime.date(year = eventYear, month = eventMonth, day = eventDay)
+eventDiff = event - today
+if eventDiff.days > 0:
+  print(f"🎉 {eventDiff.days} days left until {event}! 🎉")
+elif eventDiff.days < 0:
+  print(f"😭 {eventDiff.days} days ago from {event}! 😭")
+else:
+  print(f"🎉 It's Today! 🎉")
